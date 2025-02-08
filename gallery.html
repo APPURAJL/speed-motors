@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Speed moters</title>
+    <style>
+         body {
+            font-family: 'Arial, sans-serif';
+            margin: 0;
+            padding: 0;
+            background-color: #c2c2c2;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 16px 32px;
+        }
+        header .logo {
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 16px;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Arial, sans-serif';
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        .gallery {
+            background-color: #fff;
+            padding: 32px;
+            max-width: 1000px;
+            margin: 32px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-image: url('background templet.jpg');
+            background-size: cover;
+        }
+
+        .gallery h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+m
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 8px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .caption {
+            opacity: 1;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 16px 0;
+        }
+        body{background-image:url(Background.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Speed Moters</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="grid.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="Image2.jpeg" alt="Gallery Image 1">
+                <div class="caption">we have the best showroom with premimum car with best offers."</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Image1.jpeg" alt="Gallery Image 2">
+                <div class="caption">"we have all beautiful car with free services."</div>
+            </div>
+            <div class="gallery-item">
+                <img src="image3.jpeg" alt="Gallery Image 3">
+                <div class="caption">"with full premimum glass showroom with 5 floor building."</div>
+            </div>
+        </div>
+    </section>
+    <main>
+    <footer>
+        <p>© 2025 Speed Moters. All rights reserved.</p>
+    </footer>
+</main>
+</body>
+</html>
